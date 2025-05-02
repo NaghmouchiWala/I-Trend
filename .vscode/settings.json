@@ -1,0 +1,41 @@
+{
+	"editor.codeActionsOnSave": {},
+	"search.followSymlinks": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"eslint.rules.customizations": [
+		{
+			"rule": "*",
+			"severity": "warn"
+		}
+	],
+	"eslint.workingDirectories": [
+		{
+			"pattern": "./src/*/"
+		}
+	],
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// This adds auto-complete for tailwind, within ts-variables ending with 'Classes'
+	// reference: https://stackoverflow.com/questions/66614875/how-can-i-enable-tailwind-intellisense-outside-of-classname
+	"tailwindCSS.experimental.classRegex": [
+		["Classes \\=([^;]*);", "'([^']*)'"],
+		["Classes \\=([^;]*);", "\"([^\"]*)\""],
+		["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
+	],
+	"editor.tabSize": 2
+}
